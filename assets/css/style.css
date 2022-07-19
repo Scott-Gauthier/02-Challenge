@@ -3,6 +3,7 @@
     box-sizing: border-box;
     overflow-wrap: anywhere;
     font-family: proxima-nova;
+    text-align: inherit;
 }
 body {
     background-color: #ffffff;
@@ -99,12 +100,10 @@ main {
 /*mainbody Section*/
 .mainbody {
     width: 80%;
-    text-align: center;
+    text-align: left;
     border-style: solid;
     flex-direction: column;
-}
-.about {
-    flex-direction: column;
+    color: black;
 }
 .about img {
     height: 200px;
@@ -114,21 +113,6 @@ main {
     height: 600px;
     width: 300px;
     margin: 10px;
-}
-.computer-skills {
-    color: black;
-    text-align: left;
-    flex-direction: column;
-}
-.resume {
-    color: black;
-    text-align: left;
-    flex-direction: column;
-}
-.contact {
-    color: black;
-    text-align: left;
-    flex-direction: column;
 }
 /*rightaside Section*/
 .rightaside {
@@ -143,16 +127,15 @@ footer {
     text-align: center;
     font-size: 20px;
 }
-    @media screen and (max-width: 750px) {
-        .leftaside{
-            display: none;
-        }
-        .mainbody {
-        width: 100%;
-        flex-direction: column;
-        font-size: 8px;
-        }
-        .rightaside{
-            display: none;
-        }
+@media screen and (max-width: 750px) {
+    .leftaside{
+        display: none;
     }
+    .mainbody {
+        width: 100%;
+        font-size: 8px;
+    }
+    .rightaside{
+        display: none;
+    }
+}
